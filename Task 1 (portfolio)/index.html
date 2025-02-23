@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- heder -->
+    <header class="header">
+        <a href="#" class="logo">Developer Aharnish</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Aharnish Parekar</h1>
+            <h3>And I'm a <span class="multiple-text"></span> </h3>
+            <p>Full Stack Web Developer specializing in the MERN stack. With a passion for building dynamic </p>
+            <p>and
+                user-centric web applications, I focus on responsive design and innovative solutions. </p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/aharnish-parekar-343281267/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/aharnish1"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/_aharnish_07__/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/Aharnish07"><i class="fa-brands fa-twitter "></i></a>
+            </div>
+            <a href="Aharnish Parekar.pdf" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="photo.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="photo.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="headline">About <span>Me</span></h2>
+            <h3>Full Stack Developer</h3>
+            <p>I am an innovative and detail-oriented Full Stack Web Developer with a strong foundation in the MERN
+                stack.
+                Proficient in designing and developing dynamic web applications with a focus on user experience and
+                responsive
+                design. Adept at collaborating in team environments and committed to continuous learning and
+                improvement.
+                Passionate about leveraging technology to solve real-world problems and enhance user engagement.</p>
+            <a class='btn' href='./about.html'>Read More</a>
+        </div>
+    </section>
+
+    <!--service section -->
+    <section class="services" id="services">
+        <h2 class="headline"> My <span>Services</span></h2>
+
+        <div class="services-container">
+            <div class="Services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Website Design and Developmen</h3>
+                <p>Responsive websites designed with HTML, CSS, JavaScript, and front-end frameworks to ensure a
+                    stunning and seamless experience on all devices.</p>
+                <a class='btn' href='./service.html'>Read More</a>
+            </div>
+
+            <div class="Services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3> UI/UX Design</h3>
+                <p>Intuitive, user-focused designs created with tools like Figma and Adobe XD, ensuring both beauty and
+                    usability.</p>
+                <a class='btn' href='/pages/services'>Read More</a>
+            </div>
+
+            <div class="Services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Application Development</h3>
+                <p>Custom web applications crafted with modern technologies like MERN stack, REST APIs, and cloud
+                    integration to meet your unique needs.</p>
+                <a class='btn' href='/pages/services'>Read More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- projects section -->
+    <section class="projects" id="projects">
+        <h2 class="headline"> Latest <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src="tic.png" alt="">
+                <div class="projects-layer">
+                    <h4>Tic Tac Toe Game</h4>
+                    <p>Developed a Tic Tac Toe game using HTML, CSS, and JavaScript, focusing on responsive design and interactive features.</p>
+                    <a href='./tictactoe/index.html'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="weather.png">
+                <div class="projects-layer">
+                    <h4>Weather APP</h4>
+                    <p>Developed a dynamic realtime Weather App and a responsive
+                        design using HTML, CSS,JavaScript and Google API.</p>
+                    <a href='./weather app/index2.html'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="cal.png" alt="">
+                <div class="projects-layer">
+                    <h4> Calculator</h4>
+                    <p>Developed a functional calculator with a clean and responsive user interface.
+                        Implemented core arithmetic operations including addition, subtraction, multiplication, and division.</p>
+                    <a href='./calculator/index.html'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="exp.png" alt="">
+                <div class="projects-layer">
+                    <h4>Expense Tracker</h4>
+                    <p>Designed and developed a web-based expense tracking application for managing personal finances.
+                        Implemented features to add, edit, and delete transactions with real-time balance updates.</p>
+                    <a href='./expense tracker/index.html'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="pg.png" alt="">
+                <div class="projects-layer">
+                    <h4>Password Generator</h4>
+                    <p>Developed a secure password generator that creates strong and randomized passwords.
+                        Implemented customizable options such as length selection, uppercase/lowercase letters, numbers, and special characters.</p>
+                    <a href='./password generator/index.html'><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact" id="contact">
+        <h2 class="headline">Contact <span>Me</span></h2>
+
+        <form id="contactForm" action="/send-email">
+            <div class="input-box">
+                <input type="text" id="fullName" placeholder="Full Name">
+                <input type="email" id="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" id="mobile" placeholder="Mobile Number">
+                <input type="text" id="subject" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Massage"></textarea>
+            <input type="submit" value="Send Massage" class="btn">
+        </form>
+    </section>
+ 
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by @Aharnish Parekar | All Right Reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+    <!-- scroll revers -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- type.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- logic js -->
+    <script src="script.js"></script>
+</body>
+
+</html>

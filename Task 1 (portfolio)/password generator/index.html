@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+
+        <div class="display-container">
+            <input readonly placeholder="  password" class="display" id="passwordDisplay">
+
+            <button>
+                <span></span>
+                <img src="overlay.png" onclick="copyPassword()" alt="copy" width="23" height="23">
+            </button>
+        </div>
+        <div class="input-container">
+            <div class="length-container">
+                <p>Password Length</p>
+                <p id="lengthNumber">10</p>
+            </div>
+
+            <input type="range" min="1" max="20" class="slider" step="1" id="lengthSlider" onchange="updateLength()">
+
+            <div style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Includes Uppercase letters</label>
+            </div>
+
+            <div style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Includes Lowercase letters</label>
+            </div>
+
+            <div style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Includes Numbers </label>
+            </div>
+
+            <div style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Includes Symbols </label>
+            </div>
+
+            <div class="strength-container">
+                <p>Strength</p>
+                <div id="indicator"></div>
+            </div>
+
+
+            <button class="generateButton" onclick="generatePassword()">Generate Password</button>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+<style>
+*{
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+body{
+    height: 100vh;width: 100vw;
+    display: flex;justify-content: center;align-items: center;
+    background-color: beige;
+}
+.container{
+    display: flex;justify-content: center;align-items: center;flex-direction: column; border: 2px black solid; padding: 20px;border-radius: 20px;background-color:rgba(243, 243, 190, 0.719);
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    margin-top: 20px;
+    text-decoration:underline;
+}
+.display-container{
+    height: 30px;
+    width: 200px;
+    display: flex;justify-content: center;align-items: center;gap: 5px;
+    margin-top: 30px;
+
+}
+.display{
+    height: 100%;
+    border-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+img{
+    border-radius: 5px;
+    width: 25px;
+}
+.input-container{
+    display: flex;justify-content:space-evenly;align-items: center; text-align:start;flex-direction:column;
+    height: 300px;
+    width: 300px;
+}
+.generateButton{
+    height: 30px;
+    width: 230px;
+    border-radius: 15px;
+}
+</style>
+</html>

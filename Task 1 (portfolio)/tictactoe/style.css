@@ -1,0 +1,96 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(222.jpeg) ;
+  
+    background-size: cover;
+    background-position:center ;
+    display: grid;
+    place-items: center;
+}
+
+.game-info{
+    position: absolute;
+    color: rgb(74, 64, 64);
+    top: 3rem;
+    left: 50%;
+    padding: 0.5rem 3rem;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.642);
+    border-radius:1rem;
+    text-align: center;
+    border: 1px solid rgba(102, 102, 102, 0.477) ;
+    user-select:none;
+    
+}
+
+.ttt{
+    width: 90%;
+    padding: 2rem;
+    max-width: 20rem;
+    background-color: rgba(255, 255, 255, 0.463);
+    border: 1px solid rgba(102, 102, 102, 0.477) ;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio:1/1 ;
+}
+
+.box{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+   
+    color: rgb(74, 64, 64);
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+
+}
+
+
+#box1, #box2,  #box4, #box5{
+   
+    border-bottom:2px solid #5a5252 ;
+    border-right: 2px solid #5a5252 ;
+}
+
+#box7, #box8{
+    border-right: 2px solid #5a5252 ;
+}
+
+#box6, #box3{
+    border-bottom: 2px solid #5a5252 ;
+}
+
+.btn{
+    color: white;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid rgba(102, 102, 102, 0.477) ;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.568);
+    color: rgb(74, 64, 64);
+    border-radius:1rem;
+    display: none;
+    font-size: 1rem;
+}
+
+
+.btn.active{
+  display: flex;
+}
+
+.win{
+    background-color: rgba(33, 201, 33, 0.76);
+}
