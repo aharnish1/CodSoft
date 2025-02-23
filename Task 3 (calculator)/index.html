@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Codsoft</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.cdnfonts.com/css/calculator" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+   <video autoplay muted loop id="myVideo">
+        <source src="video.mp4.mp4" type="video/mp4">
+    </video>
+
+<div class="calculator">
+    
+    <div id="resultBox">
+        <input id="result" type="text" value="" disabled>
+    </div>
+
+          <div class="btn">
+            
+                <input id="num" type="button" value='1' onclick="Solve('1')">
+                <input id="num" type="button" value='2' onclick="Solve('2')">
+                <input id="num" type="button" value='3' onclick="Solve('3')">
+                <input id="num" type="button" value='+' onclick="Solve('+')">
+    
+                <input id="num" type="button" value='4' onclick="Solve('4')">
+                <input id="num" type="button" value='5' onclick="Solve('5')">
+                <input id="num" type="button" value='6' onclick="Solve('6')">
+                <input id="num" type="button" value='-' onclick="Solve('-')">
+            
+                <input id="num" type="button" value='7' onclick="Solve('7')">
+                <input id="num" type="button" value='8' onclick="Solve('8')">
+                <input id="num" type="button" value='9' onclick="Solve('9')">
+                <input id="num" type="button" value='*' onclick="Solve('*')">
+          
+                <input id="num" type="button" value='0' onclick="Solve('0')">
+                <input id="num" type="button" value='=' onclick="Result()" id="ans">
+                <input id="num" type="button" value='C' onclick="Clear()" id="clear">
+                <input id="num" type="button" value='/' onclick="Solve('/')">
+           
+          </div>
+
+</div>
+
+</body>
+</html>
